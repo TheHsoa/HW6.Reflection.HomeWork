@@ -2,23 +2,22 @@
 
 namespace Reflection_test
 {
-	[DefaultValue(null)]
+    [DefaultValue(null)]
     public class Cat : IAnimal
     {
         private int _tailLength;
 
-		// todo: сделать, чтобы кот гавкал :)
-	    private static string _sound = "Myyaaauuuu";
+        private static string _sound = "Myyaaauuuu";
 
-		[DefaultValue("black")]
+        [DefaultValue("black")]
         public string FurColor { get; set; }
 
-	    public bool IsPedegreeed { get; set; }
+        public bool IsPedegreeed { get; set; }
 
-	    [DefaultValue("green")]
-	    public string EyeColor { get; set; }
+        [DefaultValue("green")]
+        public string EyeColor { get; set; }
 
-	    public Cat(int tailLength)
+        public Cat(int tailLength)
         {
             _tailLength = tailLength;
         }
@@ -28,24 +27,23 @@ namespace Reflection_test
             _tailLength = 5;
         }
 
-		// todo: написать тест на приватный метод
         private bool LikeToEat(IFood someFood)
         {
-			// Котики любят рыбку :)
-	        if (someFood.GetType() == typeof (Fish))
-		        return true;
+            // Котики любят рыбку :)
+            if (someFood.GetType() == typeof(Fish))
+                return true;
 
-			return false;
+            return false;
         }
 
         public string Eating(IFood someFood)
         {
-	        return LikeToEat(someFood) ? "nyam-nyam" : "frrr";
+            return LikeToEat(someFood) ? "nyam-nyam" : "frrr";
         }
 
         public static string Voice()
         {
-			return _sound;
+            return _sound;
         }
     }
 }

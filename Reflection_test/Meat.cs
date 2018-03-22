@@ -1,7 +1,4 @@
 ﻿namespace Reflection_test
 {
-    public class Meat : IFood
-    {
-        
-    }
+    public class Meat : IFood { }
 }

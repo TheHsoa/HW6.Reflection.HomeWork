@@ -1,7 +1,4 @@
 ﻿namespace Reflection_test
 {
-	public interface IFood
-    {
-
-    }
+    public interface IFood { }
 }

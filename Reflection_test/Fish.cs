@@ -1,8 +1,5 @@
 ﻿
 namespace Reflection_test
 {
-	public interface Fish : IFood
-	{
-		
-	}
+    public interface Fish : IFood { }
 }

@@ -2,22 +2,22 @@
 
 namespace Reflection_test
 {
-	public class Dog : IAnimal
-	{
-		private static string _sound = "Gaaav!";
+    public class Dog : IAnimal
+    {
+        private static string _sound = "Gaaav!";
 
-		public double Length { get; set; }
+        public double Length { get; set; }
 
-		public double Weight { get; set; }
+        public double Weight { get; set; }
 
-		[DefaultValue("pink")]
-		public string TongueColor { get; set; }
+        [DefaultValue("pink")]
+        public string TongueColor { get; set; }
 
-		public bool IsTrained { get; set; }
+        public bool IsTrained { get; set; }
 
-		public static string Voice()
-		{
-			return _sound;
-		}
-	}
+        public static string Voice()
+        {
+            return _sound;
+        }
+    }
 }
